@@ -4,6 +4,8 @@
 
 let {Application} = require('stick');
 
+require("./app/models");
+
 let app = exports.app = new Application();
 
 app.configure('route');
