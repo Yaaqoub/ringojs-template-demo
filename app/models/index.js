@@ -14,9 +14,8 @@ let connectionPool = module.singleton("connectionPool", function() {
 
 let store = new Store(connectionPool);
 
-require('./Posts')(store);
+let Posts = require('./Posts')(store);
 
-/**
- * This Line needs to be always at the end of the script
- */
 store.syncTables();
+
+require('./../config/initial_data/post')(Posts);
