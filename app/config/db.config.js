@@ -1,3 +1,7 @@
+/**
+ * @author Yaaqoub SEMLALI <semlali.yaaqoub@gmail.com>
+ */
+
 const db_params = {
     db_name: 'ringo_demo_db',
     params: [
